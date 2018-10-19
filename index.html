@@ -9,8 +9,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>What Programming Language Should I Learn?</h1>
-      <h3>Enter the requested information below to find out:</h3>
+      <div class="jumbotron">
+        <h1>What Programming Language Should I Learn?</h1>
+        <p>Enter the requested information below to find out:</p>
+      </div>
       <br>
       <form id="quiz">
 
@@ -146,9 +148,9 @@
         <button type="submit" class="btn btn-primary btn-lg">Show me my path!</button>
       </form>
 
-      <div id="result">
-        <h1>Your Results Have Arrived!</h1>
-        <p>Dear <span id="person1"></span> , we think <span id="path"></span> would be the best track for you to follow. So hop to it!!<p>
+      <div id="result" class="alert alert-success">
+        <h2>Your Results Have Arrived!</h2>
+        <h3>Dear <span class="person1"></span>, we think <span class="path"></span> would be the best track for you to follow. So hop to it!!<h3>
       </div>
     </div>
   </body>

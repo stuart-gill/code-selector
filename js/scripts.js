@@ -8,40 +8,39 @@ $(document).ready(function() {
     var android = $("input:radio[name=android]:checked").val();
     var computer = $("input:radio[name=computer]:checked").val();
     var qArray = [income, companyType, work, android, computer];
-    alert(person1);
 
+    var path;
     if (qArray.includes("badFit")) {
-      alert("Bad Fit");
+      path = ("a close look at other options aside from programming");
     }
     else if (android === 'no' || android === 'maybe'){
       if (companyType === 'government'){
-        alert("PHP");
+        path = ("PHP");
       }
       else if (companyType === 'startup'){
-        alert("Ruby");
+        path = ("Ruby");
       }
       else if (companyType === 'established'){
-        alert("C#");
+        path = ("C#");
       }
       else if (work === 'marketing'){
-        alert("PHP");
+        path = ("PHP");
       }
       else if (work === 'web'){
-        alert("Ruby")
+        path = ("Ruby")
       }
       else {
-        alert("Java");
+        path = ("Java");
       }
     }
     else if (companyType === 'enterprise' || work === 'backend' || android === 'yes') {
-      alert("Java");
+      path = ("Java");
     }
     else {
-      alert("C#");
+      path = ("C#");
     }
-    // else if (companyType === 'startup') {
-      // $("img").hide();
-      // $("#tyrion").show();
-    // }
+    $(".person1").text(person1);
+    $(".path").text(path);
+    $("#result").show("slow");
   });
 });
