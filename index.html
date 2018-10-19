@@ -14,6 +14,11 @@
       <br>
       <form id="quiz">
 
+        <div class="form-group">
+            <label for="person1">Please enter your full name</label>
+            <input id="person1" class="form-control" type="text">
+        </div>
+
         <h4>Would you prefer to make more or less than $15 an hour?</h4>
         <div class="radio">
           <label>
@@ -138,12 +143,13 @@
 
         <br>
 
-        <button type="submit" class="btn btn-primary">Show my character</button>
+        <button type="submit" class="btn btn-primary btn-lg">Show me my path!</button>
       </form>
 
-      <img src="img/cersei.jpg" alt="a picture of cersei" id="cersei">
-      <img src="img/meli.jpg" alt="a picture of meli" id="meli">
-      <img src="img/tyrion.jpg" alt="a picture of tyrion" id="tyrion">
+      <div id="result">
+        <h1>Your Results Have Arrived!</h1>
+        <p>Dear <span id="person1"></span> , we think <span id="path"></span> would be the best track for you to follow. So hop to it!!<p>
+      </div>
     </div>
   </body>
 </html>
