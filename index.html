@@ -5,46 +5,72 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>GOT: Who are you?</title>
+    <title>Track Suggester</title>
   </head>
 
   <body>
     <div class="container">
-    <h1>Which GOT character are you?</h1>
-    <h3>Enter the information below to find out.</h3>
+    <h1>What Programming Language Should I Learn?</h1>
+    <h3>Enter the requested information below to find out:</h3>
     <br>
 
     <form id="quiz">
-      <label for="age">Age</label>
-      <input id="age" type="text">
+      <label for="income">Would you prefer to make more or less than $15 an hour?</label>
       <br>
-      <br>
-
-      <label for="gender">Gender</label>
-      <select id="gender">
-        <option value="female">Female</option>
-        <option value="male">Male</option>
+      <select id="income">
+        <option value="low">Less, I find poverty to be most edifying.</option>
+        <option value="high">More, please! Rent isnt' getting any cheaper!</option>
       </select>
+      <br>
+      <br>
 
-      <h3>What RPG class do you prefer?</h3>
+      <h4>Which kind of company would you like to work for?</h4>
       <div class="radio">
           <label>
-            <input type="radio" name="operator" value="mage" checked>
-            Mage
+            <input type="radio" name="companyType" value="enterprise" checked>
+            Enterprise level
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="warrior">
-            Warrior
+            <input type="radio" name="companyType" value="government">
+            Government
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="palladin">
-            Palladin
+            <input type="radio" name="companyType" value="startup">
+            Startup
           </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyType" value="established">
+            Established business
+          </label>
+        </div>
+
+        <h4>What would you like to work on?</h4>
+        <div class="radio">
+            <label>
+              <input type="radio" name="work" value="marketing" checked>
+              A marketing site
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="work" value="web">
+              Web apps
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="work" value="backend">
+              Back end processing
+            </label>
+          </div>
+
+
 
       <button type="submit" class="btn btn-primary">Show my character</button>
     </form>
