@@ -5,11 +5,16 @@ $(document).ready(function() {
     var companyType = $("input:radio[name=companyType]:checked").val();
     var work = $("input:radio[name=work]:checked").val();
     var android = $("input:radio[name=android]:checked").val();
+    var computer = $("input:radio[name=computer]:checked").val();
+    var qArray = [income, companyType, work, android, computer];
 
 
-    if (age > 40 && rpg == 'palladin') {
-      $("img").hide();
-      $("#cersei").show();
+    if (qArray.includes("badFit")) {
+      alert("Bad Fit");
+    }
+
+    if (income === 'yes') {
+      alert("yes");
     }
     else if (gender == 'female') {
       $("img").hide();
