@@ -11,146 +11,147 @@
     <div class="container">
       <div class="jumbotron">
         <h1>What Programming Language Should I Learn?</h1>
-        <p>Enter the requested information below to find out:</p>
+        <p class="lead">Enter the requested information below to find out:</p>
       </div>
-      <br>
+
       <form id="quiz">
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+        <label for="person1">Please enter your full name</label>
+        <input id="person1" class="form-control" type="text">
+    </div>
+    <br>
 
-        <div class="form-group">
-            <label for="person1">Please enter your full name</label>
-            <input id="person1" class="form-control" type="text">
-        </div>
+    <h4>Would you prefer to make more or less than $15 an hour?</h4>
+    <div class="radio">
+      <label>
+        <input type="radio" name="income" value="yes">
+        More, please! Rent isn't getting any cheaper
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="income" value="badFit" checked>
+        Less, I find poverty to be most edifying
+      </label>
+    </div>
+    <br>
 
-        <h4>Would you prefer to make more or less than $15 an hour?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="income" value="badFit" checked>
-            Less, I find poverty to be most edifying
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="income" value="yes">
-            More, please! Rent isnt' getting any cheaper
-          </label>
-        </div>
-        <br>
+    <h4>Which kind of company would you like to work for?</h4>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companyType" value="enterprise" checked>
+        Enterprise level
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companyType" value="government">
+        Government
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companyType" value="startup">
+        Startup
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companyType" value="established">
+        Established business
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="companyType" value="badFit">
+        Hot dog cart
+      </label>
+    </div>
+  </div>
+<div class="col-md-6">
+  <h4>What would you like to work on?</h4>
+  <div class="radio">
+    <label>
+      <input type="radio" name="work" value="marketing" checked>
+      A marketing site
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="work" value="web">
+      Web apps
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="work" value="backend">
+      Back end processing
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="work" value="badFit">
+      Changing light bulbs
+    </label>
+  </div>
+  <br>
 
-        <h4>Which kind of company would you like to work for?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyType" value="enterprise" checked>
-            Enterprise level
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyType" value="government">
-            Government
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyType" value="startup">
-            Startup
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyType" value="established">
-            Established business
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyType" value="badFit">
-            Hot dog cart
-          </label>
-        </div>
-        <br>
+  <h4>Would you like to be an Android developer?</h4>
+  <div class="radio">
+    <label>
+      <input type="radio" name="android" value="yes" checked>
+      Absolutely
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="android" value="maybe">
+      Meh, I could take it or leave it
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="android" value="no">
+      Never
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="android" value="badFit">
+      I don't trust no robots
+    </label>
+  </div>
+  <br>
 
-        <h4>What would you like to work on?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="work" value="marketing" checked>
-            A marketing site
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="work" value="web">
-            Web apps
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="work" value="backend">
-            Back end processing
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="work" value="badFit">
-            Changing light bulbs
-          </label>
-        </div>
-        <br>
-
-        <h4>Would you like to be an Android developer?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="android" value="yes" checked>
-            Absolutely
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="android" value="maybe">
-            Meh, I could take it or leave it
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="android" value="no">
-            Never
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="android" value="badFit">
-            I don't trust no robots
-          </label>
-        </div>
-        <br>
-
-        <h4>PC or Mac?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="computer" value="pc" checked>
-            PC
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="computer" value="mac">
-            Mac
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="computer" value="badFit">
-            I'll stick with counting on my fingers, thank you very much!
-          </label>
-        </div>
-
-        <br>
-
+  <h4>PC or Mac?</h4>
+  <div class="radio">
+    <label>
+      <input type="radio" name="computer" value="pc" checked>
+      PC
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="computer" value="mac">
+      Mac
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="computer" value="badFit">
+      I'll stick with counting on my fingers, thank you very much!
+    </label>
+  </div>
+</div>
+</div>
         <button type="submit" class="btn btn-primary btn-lg">Show me my path!</button>
       </form>
 
-      <div id="result" class="alert alert-success">
-        <h2>Your Results Have Arrived!</h2>
-        <h3>Dear <span class="person1"></span>, we think <span class="path"></span> would be the best track for you to follow. So hop to it!!<h3>
+      <div id="result" class="alert alert-success float-right">
+        <h2>Your Results Have Arrived . . . </h2>
+        <h3>Dear <span class="person1"></span>, we think <span class="path"></span> would be the best track for you to follow. Hop to it!!<h3>
       </div>
     </div>
   </body>
