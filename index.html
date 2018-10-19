@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>GOT: Who are you?</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Which GOT character are you?</h1>
+    <h3>Enter the information below to find out.</h3>
+    <br>
+
+    <form id="quiz">
+      <label for="age">Age</label>
+      <input id="age" type="text">
+      <br>
+      <br>
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+      </select>
+
+      <h3>What RPG class do you prefer?</h3>
+      <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="mage" checked>
+            Mage
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="warrior">
+            Warrior
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="palladin">
+            Palladin
+          </label>
+        </div>
+
+      <button type="submit" class="btn btn-primary">Show my character</button>
+    </form>
+
+      <img src="img/cersei.jpg" alt="a picture of cersei" id="cersei">
+      <img src="img/meli.jpg" alt="a picture of meli" id="meli">
+      <img src="img/tyrion.jpg" alt="a picture of tyrion" id="tyrion">
+
+    </div>
+  </body>
+</html>
