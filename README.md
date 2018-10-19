@@ -1,4 +1,4 @@
-# _Stuart Gill's Portfolio_
+# _Code Selector_
 
 https://stuart-gill.github.io/code-selector/
 
