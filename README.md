@@ -1,6 +1,6 @@
 # _Stuart Gill's Portfolio_
 
-https://stuart-gill.github.io/codeselector/
+https://stuart-gill.github.io/code-selector/
 
 #### _{10.19.18}_
 
